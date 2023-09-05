@@ -1,29 +1,26 @@
-import "./App.css";
-import { createGlobalStyle, styled } from "styled-components";
-import reset from "styled-reset";
-import CustomizedArrowNumberInput from "~/components/CustomizedArrowNumberInput";
+import { GlobalStyle } from "./global-style";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "~/pages/Home";
+import SampleComponents from "./pages/Sample";
 
-const GlobalStyle = createGlobalStyle`
-  ${reset}
-`;
-
-const Layout = styled.div`
-  display: grid;
-  place-items: center;
-  gap: 8px;
-`;
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/sample-components",
+    element: <SampleComponents />,
+  },
+]);
 
 function App() {
   return (
     <>
       <GlobalStyle />
       <Layout>
-        <CustomizedArrowNumberInput
-          onChange={(e) => {
-            console.log(e.target.value);
-          }}
-          suffix="%"
-        />
+        <RouterProvider router={router} />
       </Layout>
     </>
   );
