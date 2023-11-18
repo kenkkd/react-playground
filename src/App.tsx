@@ -5,6 +5,7 @@ import Layout from "./components/Layout";
 import Home from "~/pages/Home";
 import SampleComponents from "./pages/SampleComponents";
 import SampleTest from "./pages/SampleTest";
+import SampleSWR from "./pages/SampleSWR";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/sample-test",
     element: <SampleTest />,
+  },
+  {
+    path: "/sample-swr",
+    element: <SampleSWR />,
   },
 ]);
 
