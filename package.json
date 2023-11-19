@@ -12,16 +12,19 @@
     "test-show": "playwright show-report"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.3.2",
     "axios": "^1.5.0",
     "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.48.2",
     "react-hot-toast": "^2.4.1",
     "react-icons": "^4.10.1",
     "react-router-dom": "^6.15.0",
     "styled-components": "^6.0.7",
     "styled-reset": "^4.5.1",
-    "swr": "^2.2.2"
+    "swr": "^2.2.2",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@playwright/test": "^1.37.1",

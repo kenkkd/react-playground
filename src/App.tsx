@@ -6,6 +6,7 @@ import Home from "~/pages/Home";
 import SampleComponents from "./pages/SampleComponents";
 import SampleTest from "./pages/SampleTest";
 import SampleSWR from "./pages/SampleSWR";
+import SampleForm from "./pages/Form";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/sample-swr",
     element: <SampleSWR />,
+  },
+  {
+    path: "/sample-form",
+    element: <SampleForm />,
   },
 ]);
 
